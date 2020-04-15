@@ -1,0 +1,18 @@
+<!--
+ * @Author: renhhh
+ * @Date: 2020-04-10 10:20:29
+ * @Description: 
+ -->
+{{ extend './common/layout.art'}}
+
+{{block 'main'}}
+    <p class="bg-danger error">{{msg}}</p>
+{{/block}}
+{{block 'script'}}
+    <script>
+        setTimeout(function(){
+            location.href = '/admin/login'
+        },3000)
+    </script>
+    
+{{/block}}
